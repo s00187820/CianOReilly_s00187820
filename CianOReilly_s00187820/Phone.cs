@@ -9,9 +9,9 @@ namespace CianOReilly_s00187820
 {
     public class Phone 
     {
-        public Phone(string v1, int v2, string v3, string v4, string v5)
-        {
-        }
+        //public Phone(string v1, int v2, string v3, string v4, string v5)
+        //{
+        //}
 
         //prop
         public string Name { get; set; }

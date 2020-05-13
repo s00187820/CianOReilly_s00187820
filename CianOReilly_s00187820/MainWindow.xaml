@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CianOReilly_s00187820"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <DataTemplate x:Key="ListboxTemplate">
+            <StackPanel Orientation="Horizontal" Margin="2">
+                <Image Source="{Binding OperatingSystem}" Width="35"/>
+                
+
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" Margin="5" FontSize="14"/>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    
     <Grid>
-        
+        <ListBox x:Name="lbxPhoneNames" HorizontalAlignment="Left" Height="300" Margin="45,62,0,0" VerticalAlignment="Top" Width="250"
+                 ItemTemplate="{StaticResource ListboxTemplate}" SelectionChanged="LbxPhoneNames_SelectionChanged"/>
+        <TextBlock x:Name="tblkPrice" HorizontalAlignment="Left" Margin="468,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="250" FontSize="22"/>
+        <Image x:Name="imgPhoneLook" HorizontalAlignment="Left" Height="218" Margin="468,144,0,0" VerticalAlignment="Top" Width="250"/>
+
     </Grid>
 </Window>
