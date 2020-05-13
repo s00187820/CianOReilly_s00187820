@@ -48,7 +48,7 @@ namespace CianOReilly_s00187820
             //    string phoneCost = $"Cost >> {selectedPhone.Price:C}";
             //    tblkPrice.Text = phoneCost;
 
-            //    image.Source = new BitmapImage(new Uri($"/images/{selectedPhone.Phone_Image}", UriKind.Relative));
+            //    image.Source = new BitmapImage(new Uri($"{selectedPhone.Phone_Image}", UriKind.Relative));
             //}
         }
     }
